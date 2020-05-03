@@ -28,4 +28,16 @@
     *  Start services using `systemctl start httpd.services` but in docker container systemctl process doesn't initializes so we have 
   using `yum install httpd` I have installed software for webserver.
   
-  
+  ## 6. Website Deployment :
+   * Now I have to deploy my website on apache webserver as I have mentioned earlier we have keep all the data that we have in `/var/www/html` folder 
+   * I have keep my webpages and other data in my github repository `https://github.com/ajinkya48765/Docker-Project---Develpement-Repo` 
+   * For github intrigation I have installed git in my image using `yum install git`.
+   * I have fetched all the data from my repo and kept inside that folder.
+   * Now we are all set with website deployment now we just have to start service.
+   
+  ## 7. Configuration for automatically starting server on booting the image :
+   * In centos at the time of os booting one file always runs and that is `/etc/bashrc` so we will keep our command for server creation in it so that everytime when os boots this command will run. 
+   * while doing this I faced a problem because when os boots it creates process of server creation but and information is stored in `/var/run/httpd/` folder so we also have to remove this complete folder before running booting container. I have used `rm -rf /var/run/httpd/*` command for this.
+   * Now my webserver is completely automatic now I just want a volume which will store all of my data.
+   
+ 
