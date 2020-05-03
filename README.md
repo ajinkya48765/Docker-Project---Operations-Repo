@@ -60,3 +60,13 @@
    * as you can see along with volume I have also used network as my personel network which I have created earlier.
    
    ## 11. Docker Compose :
+   * Compose is a tool for defining and running multi-container Docker applications. With Compose, you use a YAML file to configure your application’s services.
+     * Start, stop, and rebuild services
+     * View the status of running services
+     * Stream the log output of running services
+     * Run a one-off command on a service 
+   * We have to create file docker-compose.yml this name should always be same.   
+   * Then we have some more options like in one click we can build whole infrastructure using `docker-compose up` command.  
+   * To stop services temporary we have `docker-compose stop`  
+   * To start stopped services we have `docker-compose start` 
+   * To destroy whole infrastructure we have `docker-compose down`
