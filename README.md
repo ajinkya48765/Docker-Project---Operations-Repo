@@ -50,5 +50,13 @@
       * New volumes can have their content pre-populated by a container.
    * So I have created a volume called webset for storing all my data using `docker volume create webset`
    
-  ## 9. Image Creation using commit
- 
+  ## 9. Image Creation using commit :
+   * Now as I have configure normal centos according to my requirenment and I have to save it so we have an option called commit.
+   `docker container commit [OPTIONS] container [REPOSITORY : VERSION]`
+   
+  ## 10. Start container using precreated image : 
+   * now as we have created our own image now we can multiply this as many times we want and can make as many servers we want in just few seconds.
+   * But this time while creating an image I have mount my volume in the storage folder  I used `docker ` this command. 
+   * as you can see along with volume I have also used network as my personel network which I have created earlier.
+   
+   ## 11. Docker Compose :
